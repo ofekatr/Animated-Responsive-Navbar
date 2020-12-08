@@ -18,17 +18,9 @@ body {
   background: white;
 }
 
-body::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-  border-radius: 0.25rem;
+main {
+  margin-left: 5rem;
+  padding: 1rem;
 }
 
 .navbar {
@@ -93,8 +85,16 @@ body::-webkit-scrollbar-thumb {
   margin-left: 1rem;
 }
 
-main {
-  margin-left: 5rem;
-  padding: 1rem;
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+  border-radius: 0.25rem;
 }
 /*# sourceMappingURL=style.css.map */
