@@ -25,25 +25,10 @@ main {
 }
 
 .navbar {
-  width: 5rem;
-  height: 100vh;
   position: fixed;
   background-color: var(--bg-primary);
   -webkit-transition: width 200ms ease;
   transition: width 200ms ease;
-}
-
-.navbar:hover {
-  width: 16rem;
-}
-
-.navbar:hover .link-text {
-  display: block;
-}
-
-.navbar:hover .logo svg {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
 }
 
 .navbar-nav {
@@ -147,5 +132,50 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
   border-radius: 0.25rem;
+}
+
+/* small devices */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main {
+    margin: 0;
+  }
+}
+
+/* big devices */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    width: 5rem;
+    height: 100vh;
+    top: 0;
+  }
+  .navbar:hover {
+    width: 16rem;
+  }
+  .navbar:hover .link-text {
+    display: block;
+  }
+  .navbar:hover .logo svg {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

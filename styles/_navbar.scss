@@ -1,21 +1,7 @@
 .navbar {
-  width: 5rem;
-  height: 100vh;
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 200ms ease;
-
-  &:hover {
-    width: 16rem;
-
-    .link-text {
-      display: block;
-    }
-
-    .logo svg {
-      transform: rotate(-180deg);
-    }
-  }
 }
 
 .navbar-nav {

@@ -1,0 +1,45 @@
+/* small devices */
+@media only screen and (max-width: 600px) {
+  .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+  }
+  
+  .logo {
+      display: none;
+  }
+
+  .navbar-nav {
+      flex-direction: row;
+  }
+
+  .nav-link {
+      justify-content: center;
+  }
+
+  main {
+      margin: 0;
+  }
+}
+
+/* big devices */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    width: 5rem;
+    height: 100vh;
+    top: 0;
+
+    &:hover {
+      width: 16rem;
+
+      .link-text {
+        display: block;
+      }
+
+      .logo svg {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
